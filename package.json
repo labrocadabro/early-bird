@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/labrocadabro/abrocadabro.git"
+    "url": "git+https://github.com/labrocadabro/early-bird.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/labrocadabro/abrocadabro/issues"
+    "url": "https://github.com/labrocadabro/early-bird/issues"
   },
-  "homepage": "https://github.com/labrocadabro/abrocadabro#readme",
+  "homepage": "https://github.com/labrocadabro/early-bird#readme",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.1"
   },
