@@ -9,24 +9,24 @@ html(lang="en" class=(name === "home" ? "home" : undefined))
     link(rel="preconnect" href="https://fonts.googleapis.com")
     link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
     link(href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Lalezar:wght@400&display=swap" rel="stylesheet")
-    link(rel="stylesheet" href="/css/cafe/cafe.css")
+    link(rel="stylesheet" href="/css/cafe.css")
     title !{title}
 
   body
     header
       nav(class=(name === "home" ? "home" : undefined))
         div#logo
-          a#logo(href="/portfolio/cafe/")
-            img(src="/img/cafe/logo.png" alt="logo")
+          a#logo(href="/")
+            img(src="/img/logo.png" alt="logo")
         ul
           li#menu(class=(name === "menu" ? "selected" : undefined))
-            a(href="/portfolio/cafe/menu/") menu
+            a(href="/menu/") menu
           li#locate(class=(name === "locate" ? "selected" : undefined))
-            a(href="/portfolio/cafe/locate/") locate
+            a(href="/locate/") locate
           li#contact(class=(name === "contact" ? "selected" : undefined))
-            a(href="/portfolio/cafe/contact/") contact
+            a(href="/contact/") contact
           li#about(class=(name === "about" ? "selected" : undefined))
-            a(href="/portfolio/cafe/about/") about
+            a(href="/about/") about
         p open daily 5am - 5pm
 
     main 
