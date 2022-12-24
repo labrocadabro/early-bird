@@ -1,0 +1,39 @@
+doctype html
+html(lang="en" class=(name === "home" ? "home" : undefined))
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(name="description" content=desc)
+    meta(name="keywords" content=kw)
+    link(rel="preconnect" href="https://fonts.googleapis.com")
+    link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+    link(href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Lalezar:wght@400&display=swap" rel="stylesheet")
+    link(rel="stylesheet" href="/css/cafe.css")
+    title !{title}
+
+  body
+    header
+      nav(class=(name === "home" ? "home" : undefined))
+        div#logo
+          a#logo(href="/")
+            img(src="/img/logo.png" alt="logo")
+        ul
+          li#menu(class=(name === "menu" ? "selected" : undefined))
+            a(href="/menu/") menu
+          li#locate(class=(name === "locate" ? "selected" : undefined))
+            a(href="/locate/") locate
+          li#contact(class=(name === "contact" ? "selected" : undefined))
+            a(href="/contact/") contact
+          li#about(class=(name === "about" ? "selected" : undefined))
+            a(href="/about/") about
+        p open daily 5am - 5pm
+
+    main 
+      section#hero(class="hero-" + name)
+
+      section#content(class="content-" + name) !{content}
+    div#mobile-menu
+      i.fa.fa-bars
+
+    script(type="text/javascript" src="/js/cafe.js")
