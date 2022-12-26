@@ -1,0 +1,45 @@
+body {
+	background: #f4f1f0;
+	font-family: 'Inter', sans-serif;
+	color: #1c1917;
+	font-size: 1.6rem;
+	padding: 20px 40px;
+}
+h1,
+h2,
+h3 {
+	font-family: 'Waiting for the Sunrise', sans-serif;
+	text-transform: lowercase;
+	color: #3b2719;
+}
+h1 {
+	font-size: 5rem;
+	margin-bottom: 2rem;
+}
+h2 {
+	font-size: 4rem;
+	margin-bottom: 1.5rem;
+}
+h3 {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+main {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+#left-panel,
+#right-panel {
+	min-height: 100vh;
+}
+
+/* #left-panel {
+	padding: 40px 140px 40px 40px;
+}
+#right-panel {
+	padding: 40px 40px 40px 140px;
+} */
+p {
+	line-height: 1.6;
+	margin-bottom: 2rem;
+}
